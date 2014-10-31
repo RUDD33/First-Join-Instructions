@@ -191,10 +191,11 @@ public class Instructions extends JavaPlugin {
     }
     }
     
-    //Allows players to reload the config.
+      //Allows players to reload the config.
 	public boolean onCommand(CommandSender sender, Command cmd, String alias, String[] args) {
 		Player p = (Player) sender;
-				
+			
+		if (p.hasPermission("instructions.reload")){
 		if (alias.equalsIgnoreCase("instructions")) {
 			if (args.length != 1) {
 			p.sendMessage(ChatColor.RED + "[Error] Incorrect number of arguments! Try" + ChatColor.GREEN + " /instructions reload" + ChatColor.RED + ".");
@@ -205,7 +206,7 @@ public class Instructions extends JavaPlugin {
 				p.sendMessage(ChatColor.GREEN + "Instructions config reloaded!");
 			} else {
 			p.sendMessage(ChatColor.RED + "[Error] Incorrect argument! Try" + ChatColor.GREEN + " /instructions reload" + ChatColor.RED + ".");
-			 
+			}
 			}
 			}
 	    }
