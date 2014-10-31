@@ -1,0 +1,7 @@
+name: Instructions
+version: 1.0
+main: me.RUDD33.com.Instructions
+description: Send configurable, delayed instructions to players first joining the server.
+commands:
+  instructions:
+    description: Allows player to reload plugin with "reload" argument.
