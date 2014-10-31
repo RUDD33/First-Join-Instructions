@@ -1,0 +1,7 @@
+permissions:
+    instructions.player:
+        description: Allows player to receive instructions on first join.
+        default: op
+    instructions.reload:
+        description: Allows a player to reload the config.
+        default: op
